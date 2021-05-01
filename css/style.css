@@ -270,14 +270,16 @@ ul{
     box-sizing: border-box; 
     border-radius: 10px;
     float: left;
-    /* margin-left: 10px; */
     margin: 60px 0 130px 10px;
     transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
 }
    
 .banner-bg .banner .banner-text .btn-group .btn:hover{
  background: var(--spc);
- color: var(--fc);
 }
    
 .banner-bg .banner .banner-text .btn .icon{
@@ -286,17 +288,34 @@ ul{
    
 .banner-bg .banner .banner-text .btn .icon i{
     font-size: 33px;
-     font-weight: 400;
-     color: var(--hc);
+    color: var(--hc);
     line-height: 60px;
     padding-right: 10px;
     padding-left: 20px;
+    transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+}
+
+.banner-bg .banner .banner-text .btn:hover .icon i{
+    color: var(--fc);
 }
    
 .banner-bg .banner .banner-text .btn .btn-text{
     float: left;
     text-align: left;
+    transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
 }  
+
+.banner-bg .banner .banner-text .btn:hover .btn-text{
+    color: var(--fc);
+}
    
 .banner-bg .banner .banner-text .btn .btn-text h4{
     font-family: var(--pf);
@@ -304,7 +323,16 @@ ul{
     font-weight: 400;
     color: var(--hc);
     padding-top: 5px;
+    transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
 }  
+
+.banner-bg .banner .banner-text .btn:hover .btn-text h4{
+    color: var(--fc);
+}
    
 .banner-bg .banner .banner-text .btn .btn-text h4::first-letter{
     text-transform: uppercase;
@@ -316,10 +344,43 @@ ul{
     font-weight: 700;
     color: var(--hc);
     padding-top: 5px;
+    transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
 }   
 
+.banner-bg .banner .banner-text .btn:hover .btn-text h2{
+    color: var(--fc);
+}
 /* banner part css ends */
 
+.banner-bg .icon-area{
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+}
+
+.banner-bg .icon-area ul li{
+    line-height: 61px;
+}
+
+.banner-bg .icon-area ul li a i{
+    font-size: 14px;
+    color: var(--fc);
+    transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+}
+
+.banner-bg .icon-area ul li:hover a i{
+    color: var(--spc);
+}
+/* right icon css ends here */
 
 .about-bg{
     padding-top: 100px;
@@ -560,9 +621,12 @@ ul{
     padding-top: 92px;
     padding-bottom: 50px;
 }
+
+.screenshot-bg .screenshot{
+    position: relative;
+}
 .screenshot-bg .screenshot .sub-heading{
-    margin-bottom: 78px;
-    
+    margin-bottom: 78px;   
 }
 
 .screenshot-bg .screenshot .sub-heading .line{
@@ -572,10 +636,35 @@ ul{
 .screenshot-bg .screenshot .image{
    text-align: center;
 }
+.screenshot-bg .screenshot ul{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 30px;
+}
+.screenshot-bg .screenshot ul li{
+    float: left;
+    margin-right: 10px;
+}
+
+.screenshot-bg .screenshot ul li:last-of-type{
+    margin-right: 0;
+}
+
+.screenshot-bg .screenshot ul li::after{
+    content: '';
+    width: 14px;
+    height: 14px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    display: block;    
+}
+
 /* screenshot css ends here */
 
 .video-bg{
     padding-top: 90px;
+    position: relative;
 }
 
 .video-bg .container .sub-heading {
@@ -583,12 +672,10 @@ ul{
 }
 
 .video-bg .container .sub-heading .line{
-    left: 47%;
+    left: 45%;
 }
-
+ 
 .video-bg .image-bg{
-    /* background: url(../images/banner-02.jpg) no-repeat center / cover;
-    padding: 250px 0; */
     width: 100%;
     position: relative;
 }
@@ -616,11 +703,16 @@ ul{
 .video-bg .image-bg .overlay .icon i{
     font-size: 80px;
     color: #feffff;
+    transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
 }
 
 .video-bg .image-bg .overlay .icon:hover i{
     color: var(--spc);
-}
+} 
 
 /* video part css ends here */
 
